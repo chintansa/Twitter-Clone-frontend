@@ -10,11 +10,33 @@ body{
     width: fit-content;
 
 }
-
+.wd-high{
+    font-size: 20px; 
+    font-weight: bold; 
+}
+.wd-fflex{
+    display: flex;
+}
+wd-white{
+color:white;
+}
 .wd-main-content{
     position: absolute;
     left:30%;
     right: 30%;
+}
+.wd-pad-here{
+padding-top: 20px;
+}
+
+.wd-font-here{
+font-size: 15px;
+}
+
+.wd-here{
+display: flex;
+flex-direction: row;
+justify-content: flex-start;
 }
 
 .wd-cirle{
@@ -41,6 +63,10 @@ color: rgb(101,119,134);
 .wd-grey-clr{
     color: rgb(101,119,134);
 
+}
+
+.wd-fix{
+    width: 610px;
 }
 
 a{
