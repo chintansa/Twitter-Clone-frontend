@@ -158,9 +158,15 @@ a.active.nav-link{
 
 
 .list-group-item{
-    background-color: black;
+    /* background-color: black; */
     color:rgb(245,248,250);
+
     
+}
+
+.wd-random-clr{
+    background-color: rgb(30,30,30);
+    border: none;
 }
 
 .wd-align-icon{
@@ -268,7 +274,7 @@ a.active.nav-link{
 }
 
 .wd-bgclr{
-    color: grey;
+    color: grey !important;
 }
 
 
@@ -295,4 +301,13 @@ a.active.nav-link{
 .wd-border-none{
     border-width: 0;
     border-color: transparent;
+}
+
+
+
+.wd-corner-rounded{
+    border-bottom-left-radius: 20px !important;
+    border-bottom-right-radius: 20px !important;
+    border-top-left-radius: 20px !important;
+    border-top-right-radius: 20px !important;
 }
