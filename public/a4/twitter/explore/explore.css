@@ -40,16 +40,11 @@ input{
 a.active.nav-link{
     background-color: black!important;
     border: none;
-    border-bottom: 4px solid!important; 
     border-bottom-color: rgb(29,161,242)!important;
     }
 
-/* a.nav-link>:hover{
-    border: none;
-    border-width: 0;
-    border-color: transparent;
-    color:rgb(29,161,242)!important;
-}     */
+
+  
 
 .fa-twitter{
     background-color: transparent;
