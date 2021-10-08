@@ -64,7 +64,7 @@ a.active.nav-link{
 
 .wd-clr-black{
     background-color: black;
-    
+
     flex-direction: row;
     
 }
@@ -188,11 +188,14 @@ a.active.nav-link{
 }
 
 .wd-div{
-    border: 1px;
-    border-style: solid;
+    border-right: 1px;
+    border-left: 1px;
+    border-right-style: solid;
+    border-left-style: solid;
     border-color: rgb(47, 51, 54);
     margin: 0;
     padding: 0;
+    
 }
 
 .wd-white{
@@ -300,9 +303,3 @@ a.active.nav-link{
 
 
 
-.wd-corner-rounded{
-    border-bottom-left-radius: 20px !important;
-    border-bottom-right-radius: 20px !important;
-    border-top-left-radius: 20px !important;
-    border-top-right-radius: 20px !important;
-}
