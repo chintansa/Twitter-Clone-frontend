@@ -116,7 +116,7 @@ const NavigationSidebar = (active) => {
 
 
             </div>
-            <div class="d-grid mt-2">
+            <div class="d-grid mt-3">
                 <a href="tweet.html"
                    class="btn btn-primary btn-block rounded-pill">
                     Tweet</a>

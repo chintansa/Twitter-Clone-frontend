@@ -38,7 +38,7 @@ const ExploreComponent = () => {
                     </li>
 
             </div>
-            <div class="card mt-2">
+            <div class="card mt-2 mb-2">
                 <img class="card-img-top" src="../../../assets/starship.jpg" alt="starship image">
                 <div class="card-body text-white wd-text-large rgba-black-light p-2 wd-bottom-left wd-fonts-bold "> 
                     SpaceX's Starship 
