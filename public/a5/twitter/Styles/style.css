@@ -1,0 +1,275 @@
+*{
+    font-family:Helvetica;
+    color: white;
+    font-size: 13px;
+}
+body{
+    background-color: rgb(20,23,26);
+    padding-left: 16px;
+    padding-right: 16px;
+    width: fit-content;
+
+}
+.wd-high{
+    font-size: 20px; 
+    font-weight: bold; 
+}
+.wd-fflex{
+    display: flex;
+}
+.wd-white{
+color:white;
+}
+.wd-main-content{
+    position: absolute;
+    left:30%;
+    right: 30%;
+}
+.wd-pad-here{
+padding-top: 20px;
+}
+
+.wd-font-here{
+font-size: 15px;
+}
+
+.wd-here{
+display: flex;
+flex-direction: row;
+justify-content: flex-start;
+}
+
+.wd-cirle{
+color: rgb(101,119,134);
+}
+
+.wd-circle-align{
+    display:inline;
+    float: right;
+}
+.wd-circle-align-book{
+    display:inline;
+    float: right;
+    padding-right: 30px;
+    color:rgb(29,161,242) ;
+}
+
+.wd-top-border{
+    border-style:solid; 
+    border-width:1px; 
+    padding: 2px; 
+    border-color:rgb(69, 74, 80); 
+}
+.wd-grey-clr{
+    color: rgb(101,119,134);
+
+}
+
+.wd-fix{
+    width: 610px;
+}
+
+a{
+    text-decoration: none;
+}
+input{
+    color: white;
+    outline: none;
+}
+
+.wd-div{
+    align-content: flex-start;
+    border: 1px;
+    border-style: solid;
+    border-color: rgb(47, 51, 54);
+    padding:20px;
+    margin: 0;
+}
+.wd-div-book{
+    align-content: flex-start;
+    border: 1px;
+    border-style: solid;
+    border-color: rgb(47, 51, 54);
+    padding-top:12px;
+    padding-left: 16px;
+    margin: 0;
+}
+
+
+::placeholder {
+    font-size: 1em;
+    padding-left: 30px;
+    
+  }
+
+.wd-txt-clr{
+    color:  rgb(110, 118, 125);
+}
+
+.wd-txt-hgl{
+    color: rgb(29,161,242);
+    border-bottom: 3px solid rgb(29,161,242) ;
+}
+
+.wd-txt-pad{
+    padding: 16px;
+}
+.wd-txt-book{
+    padding-left: 12px;
+    padding-bottom: 5px;
+    width: 504px;
+}
+
+.wd-rounded-corners{
+    border-radius: 30px 30px 30px 30px;
+    background-color: rgb(47, 51, 54);
+    border-color: rgb(47, 51, 54);
+    padding-top: 5px;
+    padding-bottom: 5px;
+    
+}
+
+.wd-search {
+    background: transparent ;
+    border: none;
+    width: 80%;   
+}
+
+.fa-search{
+    color: rgb(101,119,134);
+    /* background: transparent; */
+   padding-left: 10px;
+}
+
+.fa-cog{
+    color: rgb(29,161,242);
+    padding-left: 30px; 
+   
+}
+
+.wd-topic-clr{
+ color: rgb(110, 118, 125);
+ font-size: 13px;
+ line-height: 25px; 
+
+}
+
+
+.wd-normal-topic-clr{
+ color: white;
+ font-size: 13px;
+ line-height: 25px;
+
+}
+
+.fa-certificate{
+    position: relative;
+    color:rgb(101,119,134) ;
+    z-index: 10;
+}
+.wd-checkmark{
+    background-color: rgb(110, 118, 125);
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    margin: 5px;
+    color: black;
+    align-items: center;
+}
+
+
+.wd-img-left{
+    width:20px;
+    height:20px;
+    border-radius: 50%;
+    margin: 0px;
+    
+}
+.wd-text-width{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: auto;
+    font-size: 13px;
+
+}
+.wd-img-align{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+.wd-img-right{
+    display: flex;
+    align-items: flex-end;
+    width: 100px;
+    height: 100px;
+    border-radius: 20px 20px 20px 20px;
+
+}
+
+.wd-profile{
+    height: 48px;
+    height: 48px;
+    border-radius: 48px;
+}
+
+.wd-img-book{
+    width: 504px;
+    height: 264px;
+    margin: 0;
+    border-top-right-radius: 0.5cm;
+    border-top-left-radius: 0.5cm;
+    object-fit:fill;
+}
+
+.wd-div-img-book{
+    border: 1px;
+    border-style: solid;
+    border-color: rgb(47, 51, 54);
+    padding-left: 16px;
+    border-bottom-right-radius: 0.2cm;
+    width: 487px;
+    border-bottom-left-radius: 0.2cm;
+}
+.wd-book-pad{
+    padding: 12px 0 12px 0;
+
+}
+.wd-book-txt{
+    line-height: 30px;
+    font-size: 15px;
+}
+.fa-link{
+    color: rgb(110, 118, 125);
+}
+
+.wd-btn-twitter{
+    display: flex;
+    align-self: start;
+    justify-content:space-around;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    background-color: transparent;
+}
+.icon-pad{
+    padding: 12px;
+}
+.icon-clr{
+    color:rgb(253,36,76);
+}
+.fa-heart{
+    color: rgb(253,36,76);
+}
+.fa-comment{
+    color: lightgrey;
+}
+
+.fa-retweet {
+    color: lightgrey;
+}
+.fa-retweet {
+    color: lightgrey;
+}
