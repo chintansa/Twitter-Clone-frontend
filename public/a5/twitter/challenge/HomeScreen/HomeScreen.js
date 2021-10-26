@@ -19,10 +19,7 @@ import PostItemSummary from "../PostList/PostItemSummary.js";
             </div>
 
 
-        </div>   
-    
-      
-        
+        </div>      
 
         </div>
     `);
