@@ -102,11 +102,11 @@ const NavigationSidebar = ( {
                 </div>
 
             </Link>
+            
             <Link className="list-group-item list-group-item-action py-3 wd-clr-black" to="#">
                 <div className="row">
-                    <div className="col-xxl-2 col-xl-2 col-lg-1 col-md-2 col-sm-1 px-2">
-                        <span className="fas fa-ellipsis-h"></span>
-
+                    <div className="col-xxl-2 col-xl-2 col-lg-1 col-md-2 col-sm-1">
+                    <i class="far fa-circle"></i>
                     </div>
                     <div className="col-xxl-10 col-xl-8 d-none d-xl-block">
                         More
@@ -127,3 +127,4 @@ const NavigationSidebar = ( {
     );
 }
 export default NavigationSidebar;
+<i className="fas fa-ellipsis-h"></i>
