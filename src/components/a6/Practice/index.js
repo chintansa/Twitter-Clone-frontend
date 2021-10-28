@@ -9,17 +9,19 @@ const Practice = () => {
  return(
    <div>
       <h1>Practice</h1>
+      <Link to="/a6/hello">
+              Hello
+          </Link> |
+     <Link to="/a6/build">
+              Build
+      </Link>
+
       <TodoList/>
       <TodoItem/>
       <Styles/>
       <Classes/>
       <ConditionalOutput/>
-          <Link to="/a6/hello">
-              Hello
-          </Link> |
-          <Link to="/a6/build">
-              Build
-          </Link>
+         
 
    </div>
  )
