@@ -2,7 +2,6 @@ import './App.css';
 import './vendors/bootstrap/bootstrap.min.css'
 import HelloWorld from "./components/a6/HelloWorld";
 import Practice from './components/a6/Practice/index';
-import Build from './components/a6/Build/index';
 import {BrowserRouter, Route} from "react-router-dom";
 import HomeScreen from './components/a6/Build/HomeScreen/HomeScreen';
 import ExploreScreen from './components/a6/Build/ExploreScreen/ExploreScreen';
@@ -19,11 +18,10 @@ function App() {
         <Practice/> 
       </Route>
 
-      <Route path="/a6/build" exact={true}>
-        <Build/>
+      <Route path="/a6/twitter/home" exact={true}>
+        <HomeScreen/>
       </Route>
 
-      <Route path="/a6/twitter/home" component={HomeScreen}/>
       <Route path="/a6/twitter/explore" component={ExploreScreen}/>
 
     </div>

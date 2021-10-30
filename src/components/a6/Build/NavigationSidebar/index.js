@@ -8,7 +8,7 @@ const NavigationSidebar = ( {
     return(
             <><div classNameName="list-group">
 
-            <Link className="list-group-item list-group-item-action py-3 wd-clr-black" to="#">
+            <Link to = "/a6/practice" className="list-group-item list-group-item-action py-3 wd-clr-black" >
                 <div className="row">
                     <div className="col-xxl-2 col-xl-2 col-lg-1 col-md-2 col-sm-1">
                         <div className="fab fa-twitter"></div>
