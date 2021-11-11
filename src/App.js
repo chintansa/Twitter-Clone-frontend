@@ -1,28 +1,30 @@
 import './App.css';
 import './vendors/bootstrap/bootstrap.min.css'
-import HelloWorld from "./components/a6/HelloWorld";
-import Practice from './components/a6/Practice/index';
-import {BrowserRouter, Route} from "react-router-dom";
-import HomeScreen from './components/a6/Build/HomeScreen/HomeScreen';
-import ExploreScreen from './components/a6/Build/ExploreScreen/ExploreScreen';
+
+import {BrowserRouter, Link, Route} from "react-router-dom";
+
+
+import A7 from './components/a7';
+import A6 from './components/a6';
+
 function App() {
   return (
     <BrowserRouter>
     <div className="container">
 
-      <Route path="/a6/hello" exact={true}>
-        <HelloWorld/>
-      </Route>
-
-      <Route path= {["/","/a6","/a6/practice"]} exact= {true} >
-        <Practice/> 
-      </Route>
-
-      <Route path="/a6/twitter/home" exact={true}>
-        <HomeScreen/>
-      </Route>
-
-      <Route path="/a6/twitter/explore" component={ExploreScreen}/>
+    <Link to = "/a7/practice">
+     Link to A7 
+    </Link>
+    <Route path={"/a7"}>
+        <A7/>
+    </Route>
+    
+    <Link to = "/a6/practice">
+      Link to A6
+    </Link>
+    <Route path={"/a6"}>
+        <A6/>
+    </Route>
 
     </div>
     </BrowserRouter>
@@ -30,3 +32,19 @@ function App() {
 }
 
 export default App;
+
+
+ /* <Route path= "/a7/hello" exact={true}>
+          <HelloWorld/>
+    </Route>
+    <Route path={["/", "/a7", "/a7/practice"]}exact={true}>
+          <Practice/>
+    </Route>
+
+    <Route path="/a7/twitter/explore" exact={true}>
+            <Build/>
+    </Route>
+   
+    <Route path= "/a7/twitter/home" exact={true} >
+            <HomeScreen/>
+    </Route> */

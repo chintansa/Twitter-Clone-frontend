@@ -8,7 +8,7 @@ const NavigationSidebar = ( {
     return(
             <><div classNameName="list-group">
 
-            <Link to = "/a6/practice" className="list-group-item list-group-item-action py-3 wd-clr-black" >
+            <Link to = "/a7" className="list-group-item list-group-item-action py-3 wd-clr-black" >
                 <div className="row">
                     <div className="col-xxl-2 col-xl-2 col-lg-1 col-md-2 col-sm-1">
                         <div className="fab fa-twitter"></div>
@@ -18,7 +18,7 @@ const NavigationSidebar = ( {
 
             </Link>
           
-            <Link to="/a6/twitter/home" className= {`list-group-item list-group-item-action py-3 wd-clr-black ${active === 'Home' ? 'active':''} align-content-center`}  >
+            <Link to="/a7/twitter/home" className= {`list-group-item list-group-item-action py-3 wd-clr-black ${active === 'Home' ? 'active':''} align-content-center`}  >
                 <div className="row">
                     <div className="col-xxl-2 col-xl-2 col-lg-1 col-md-2 col-sm-1">
                         <div className="fas fa-home"></div>
@@ -31,7 +31,7 @@ const NavigationSidebar = ( {
 
             </Link>
 
-            <Link to= "/a6/twitter/explore" className={`list-group-item list-group-item-action py-3 wd-clr-black ${active === 'Explore' ? 'active':''} align-content-center`} >
+            <Link to= "/a7/twitter/explore" className={`list-group-item list-group-item-action py-3 wd-clr-black ${active === 'Explore' ? 'active':''} align-content-center`} >
                 <div className="row">
                     <div className="col-xxl-2 col-xl-2 col-lg-1 col-md-2 col-sm-1">
                         <i className="fa fa-hashtag center"></i>
@@ -90,7 +90,7 @@ const NavigationSidebar = ( {
 
                 </div>
             </Link>
-            <Link className="list-group-item list-group-item-action py-3 wd-clr-black" to="#">
+            <Link to="/a7/twitter/profile" className={`list-group-item list-group-item-action py-3 wd-clr-black ${active === 'Profile' ? 'active':''} align-content-center`} >
                 <div className="row">
                     <div className="col-xxl-2 col-xl-2 col-lg-1 col-md-2 col-sm-1">
                         <i className="fas fa-user"></i>
