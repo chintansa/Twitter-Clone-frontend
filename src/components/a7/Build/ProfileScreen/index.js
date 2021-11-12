@@ -15,7 +15,7 @@ const ProfileScreen = () => {
                 <TweetList/>
             </div>
             <div class="d-sm-none d-md-none d-lg-block col-lg-4 col-xl-4 col-xxl-4">
-                <PostSummaryList/>
+            <PostSummaryList title= "What's Happening"/>
             </div>  
         </div>
     )
