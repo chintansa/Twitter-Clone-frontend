@@ -61,7 +61,7 @@ return(
                         <p>{profile.bio}</p>
                     </div>
                     <div className = "row">
-                        <div className = "col-2">
+                        <div className = "col-3">
                         <i class="fas fa-map-marker-alt text-muted"></i>
                             <span> {profile.location}</span>
                         </div>
