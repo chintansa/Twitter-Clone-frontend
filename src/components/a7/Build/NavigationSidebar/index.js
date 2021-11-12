@@ -6,7 +6,7 @@ const NavigationSidebar = ( {
     active 
     }) => {
     return(
-            <><div classNameName="list-group">
+            <><div className="list-group">
 
             <Link to = "/a7" className="list-group-item list-group-item-action py-3 wd-clr-black" >
                 <div className="row">
@@ -106,7 +106,7 @@ const NavigationSidebar = ( {
             <Link className="list-group-item list-group-item-action py-3 wd-clr-black" to="#">
                 <div className="row">
                     <div className="col-xxl-2 col-xl-2 col-lg-1 col-md-2 col-sm-1">
-                    <i class="far fa-circle"></i>
+                    <i className="far fa-circle"></i>
                     </div>
                     <div className="col-xxl-10 col-xl-8 d-none d-xl-block">
                         More
