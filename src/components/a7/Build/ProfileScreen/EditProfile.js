@@ -2,6 +2,7 @@
 import React, {useState} from "react";
 import {useSelector, useDispatch} from "react-redux";
 import { Link } from "react-router-dom";
+import "react-datepicker/dist/react-datepicker.css";
 
 const EditProfile = () =>{
     const profileData = useSelector((state) => state.profile.profile)
@@ -14,13 +15,14 @@ const EditProfile = () =>{
 
     return(
         <>
+        <div className="pb-5 mb-5">
             <div className = "row">
                 <div className = "col-2">
                     <Link to="/a7/twitter/profile"><i className="fas fa-times" aria-hidden="true"></i></Link>
                 </div>
                 <div className = "col-8">
                     <div className = "row pb-0 mb-0">
-                        <h3>Edit Profile</h3>
+                        <h5>Edit Profile</h5>
                     </div>
                 </div>
                 <div className="col-2 mb-2">
@@ -35,8 +37,8 @@ const EditProfile = () =>{
                     <img src={profileData.bannerPicture} />
                 </div>
 
-                <div className = "row wd-avatar-div px-2">
-                        <img src={profileData.profilePicture} className="rounded-circle wd-profile-image-edit ms-3 img-fluid bg-white "/>
+                <div className = "row px-2">
+                <img src= {profileData.profilePicture} className="rounded-circle ms-3 wd-profile-image-edit img-fluid bg-white" />
                 </div>
             </div>
             <div className = "wd-details-form">
@@ -73,6 +75,7 @@ const EditProfile = () =>{
                         onChange = {e => setProfileData((value) =>({...value,[e.target.name] : e.target.value.toString()}))}/>
                     </li>
                 </ul>
+            </div>
             </div>
         </>
     )

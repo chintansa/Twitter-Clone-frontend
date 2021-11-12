@@ -2,7 +2,6 @@ import React from "react";
 import NavigationSidebar from "../NavigationSidebar/index"
 import PostSummaryList from "../PostSummaryList/PostSummaryList";
 import EditProfile from "./EditProfile";
-import TweetList from "../TweetList/index"
 
 const EditProfileScreen = () => {
     return(
@@ -12,7 +11,6 @@ const EditProfileScreen = () => {
             </div>
             <div class = "col-xxl-6 col-xl-6 col-lg-6 mb-3 col-md-10 col-sm-10 col-xs-10">
                 <EditProfile/>
-                <TweetList/>
             </div>
             <div class="d-sm-none d-md-none d-lg-block col-lg-4 col-xl-4 col-xxl-4">
                 <PostSummaryList/>

@@ -9,8 +9,7 @@ const profile = (state = initialState, action) =>{
         case 'save':
            
             if(action.newInput.name){
-                initialState.profile['firstName'] = action.newInput['name'].split(" ")[0];
-                initialState.profile['lastName'] = action.newInput['name'].split(" ")[1];
+                initialState.profile['firstName'] = action.newInput['name'];
             }
             if(action.newInput.bio){
                 initialState.profile['bio'] = action.newInput['bio'];
