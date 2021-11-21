@@ -6,11 +6,19 @@ import {BrowserRouter, Link, Route} from "react-router-dom";
 
 import A7 from './components/a7';
 import A6 from './components/a6';
+import A8 from './components/a8';
 
 function App() {
   return (
     <BrowserRouter>
     <div className="container">
+      
+    <Link to = "/a8/practice">
+     Link to A8 
+    </Link>
+    <Route path={"/a8"}>
+        <A8/>
+    </Route>
 
     <Link to = "/a7/practice">
      Link to A7 

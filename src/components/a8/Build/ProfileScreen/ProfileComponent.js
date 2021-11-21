@@ -13,7 +13,7 @@ return(
         <div className="pb-5">
             <div className = "row">
                     <div className = "col-2">
-                        <Link to="/a7/twitter/home">
+                        <Link to="/a8/twitter/home">
                         <i className="fa fa-arrow-left text-muted" aria-hidden="true"></i>
                         </Link>
                         
@@ -38,12 +38,12 @@ return(
                             <img src= {profile.profilePicture} className="rounded-circle ms-3 wd-profile-image img-fluid bg-white" />
                         </div>
                         <div className = "col-4 align-items-center">
-                            <Link to="/a7/twitter/profile/editProfile">
+                            <Link to="/a8/twitter/profile/editProfile">
                                 <button className="btn btn-primary rounded-pill mt-3 bg-black">
                                     <strong>Edit Profile</strong>
                                 </button>
                             </Link>
-                            <Route path={"/a7/twitter/profile/editProfile"}>
+                            <Route path={"/a8/twitter/profile/editProfile"}>
                                <EditProfileScreen/>
                             </Route>
                         </div>

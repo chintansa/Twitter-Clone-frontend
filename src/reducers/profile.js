@@ -24,8 +24,6 @@ const profile = (state = initialState, action) =>{
                 initialState.profile['website'] = action.newInput['website'];
             }
 
-            console.log("reducer state");
-            console.log(action.newInput)
             return {
                 ...state,
                    
