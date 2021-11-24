@@ -33,15 +33,12 @@ const tweets = (state = initialState, action) => {
             break;
 
         case 'delete-tweet':
-            //console.log(action.homepost._id);
-
             return ({
                 tweets: state.tweets.filter(tweet => tweet._id !== action.tweet._id)
             })
             break;
 
         case 'create-tweet':
-            console.log("mbvmbvhjm")
 
             const tweet = {
                 _id: (new Date()).getTime() + '',

@@ -10,14 +10,21 @@ export const fetchProfile = (dispatch) =>
             })
         );
 
-export const updateProfile = (dispatch, profile) =>
+export const saveProfileData = (dispatch, profile) => {
     fetch(PROFILE_API, {
-        method: 'PUT'
+        method: 'PUT',
+        body: JSON.stringify(profile),
+        headers: {
+            'content-type': 'application/json'
+        }
     })
+      
         .then(response => response.json())
-        .then(profiles =>
+        .then(response => 
             dispatch({
-                type: 'save-information',
+                type : 'fetch-profile',
                 profile
-            })
-        );
+            }));
+        }
+
+      

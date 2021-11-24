@@ -1,13 +1,16 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 /* eslint-disable jsx-a11y/alt-text */
-import React from "react";
-import {useSelector} from "react-redux";
+import React, {useEffect} from 'react';
+import {useSelector,useDispatch,} from "react-redux";
 import { Link, Route } from "react-router-dom";
 import EditProfileScreen from "./EditProfileScreen";
-import './profile.css'
-
+import './profile.css';
+import {fetchProfile} from "../../../../services/profileService";
 
 const ProfileComponent = () => {
-    const profile = useSelector((state) => state.profile.profile)   
+    const profile = useSelector((state) => state.profile.profile);
+    const dispatch = useDispatch();
+    useEffect(() => fetchProfile(dispatch), []) 
 return(
         <>
         <div className="pb-5">

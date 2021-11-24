@@ -11,7 +11,7 @@ import {Provider} from "react-redux";
 import ProfileScreen from './ProfileScreen/index';
 import EditProfileScreen from './ProfileScreen/EditProfileScreen';
 
-const reducer = combineReducers({tweets: tweets, who, profile})
+const reducer = combineReducers({tweets: tweets, who, profile: profile})
 const store = createStore(reducer);
 
 const Build = () => {

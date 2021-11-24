@@ -1,17 +1,31 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 /* eslint-disable jsx-a11y/alt-text */
 import React, {useState} from "react";
 import {useSelector, useDispatch} from "react-redux";
 import { Link } from "react-router-dom";
 import "react-datepicker/dist/react-datepicker.css";
+import { saveProfileData } from "../../../../services/profileService";
 
+// const EditProfile = () =>{
+//     const profileData = useSelector((state) => state.profile.profile)
+
+//     let[newInput, setProfileData] = useState({})
+//     const dispatch = useDispatch();
+//     const saveChanges = () => {
+//         // dispatch({type:'save', newInput})
+//           updateProfile(dispatch,{profileData: newInput})
+//     }
 const EditProfile = () =>{
-    const profileData = useSelector((state) => state.profile.profile)
-
+    // const profileData = useSelector((state) => state.profile.profile)
     let[newInput, setProfileData] = useState({})
     const dispatch = useDispatch();
     const saveChanges = () => {
-        dispatch({type:'save', newInput})
+        saveProfileData(dispatch, newInput)
+        console.log("In edit profile js")
+        console.log(newInput)
     }
+    const profileData = useSelector((state) => state.profile.profile)
+
 
     return(
         <>

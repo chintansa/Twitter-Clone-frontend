@@ -2,6 +2,7 @@
 
 #intelliJ
 .idea
+.zip
 
 # dependencies
 /node_modules
