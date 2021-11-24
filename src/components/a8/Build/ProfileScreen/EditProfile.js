@@ -16,7 +16,7 @@ import { saveProfileData } from "../../../../services/profileService";
 //           updateProfile(dispatch,{profileData: newInput})
 //     }
 const EditProfile = () =>{
-    // const profileData = useSelector((state) => state.profile.profile)
+    const profileData = useSelector((state) => state.profile.profile)
     let[newInput, setProfileData] = useState({})
     const dispatch = useDispatch();
     const saveChanges = () => {
@@ -24,8 +24,7 @@ const EditProfile = () =>{
         console.log("In edit profile js")
         console.log(newInput)
     }
-    const profileData = useSelector((state) => state.profile.profile)
-
+    
 
     return(
         <>
