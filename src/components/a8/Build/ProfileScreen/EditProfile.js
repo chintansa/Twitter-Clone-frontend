@@ -21,8 +21,6 @@ const EditProfile = () =>{
     const dispatch = useDispatch();
     const saveChanges = () => {
         saveProfileData(dispatch, newInput)
-        console.log("In edit profile js")
-        console.log(newInput)
     }
     
 

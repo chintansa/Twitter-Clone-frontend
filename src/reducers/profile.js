@@ -12,6 +12,10 @@ const profile = (state = initialState, action) =>{
              console.log("Act input: " + action.newInput)
          
     switch(action.type){
+        case 'fetch-profile':
+            return({
+                    profile: action.profile
+                })
         case 'save':
             console.log("inside save -- - - - -- - - -");
                 
@@ -36,12 +40,6 @@ const profile = (state = initialState, action) =>{
                    
             }; 
             break;
-        case 'fetch-profile':
-            return({
-                    profile: action.profile
-                })
-            break;
-        
         default:
             return (state)
                     
