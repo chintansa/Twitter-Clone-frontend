@@ -16,30 +16,6 @@ const profile = (state = initialState, action) =>{
             return({
                     profile: action.profile
                 })
-        case 'save':
-            console.log("inside save -- - - - -- - - -");
-                
-            // if(action.newInput.name){
-            //     state.profile['firstName'] = action.newInput['name'];
-            // }
-            // if(action.newInput.bio){
-            //     state.profile['bio'] = action.newInput['bio'];
-            // }
-            // if(action.newInput.location){
-            //     state.profile['location'] = action.newInput['location'];
-            // }
-            // if(action.newInput.dateOfBirth){
-            //     state.profile['dateOfBirth'] =action.newInput['dateOfBirth'];
-            // }
-            // if(action.newInput.website){
-            //     state.profile['website'] = action.newInput['website'];
-            // }
-
-            return {
-                ...state,
-                   
-            }; 
-            break;
         default:
             return (state)
                     
