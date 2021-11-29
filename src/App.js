@@ -7,18 +7,30 @@ import {BrowserRouter, Link, Route} from "react-router-dom";
 import A7 from './components/a7';
 import A6 from './components/a6';
 import A8 from './components/a8';
+// import A9 from './components/a9';
+
 
 function App() {
   return (
     <BrowserRouter>
     <div className="container">
-      
+
+    {/* <Link to = "/a9/practice">
+     Link to A9 
+    </Link>
+    <Route path={"/a9"}>
+        <A9/>
+    </Route>
+    <br/> */}
+     
+
     <Link to = "/a8/practice">
      Link to A8 
     </Link>
     <Route path={"/a8"}>
         <A8/>
     </Route>
+    <br/>
 
     <Link to = "/a7/practice">
      Link to A7 
@@ -26,7 +38,8 @@ function App() {
     <Route path={"/a7"}>
         <A7/>
     </Route>
-    
+    <br/>
+
     <Link to = "/a6/practice">
       Link to A6
     </Link>

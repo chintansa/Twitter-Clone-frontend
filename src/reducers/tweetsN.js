@@ -48,8 +48,8 @@ const tweets = (state = initialState, action) => {
                 "handle": "ReactJS",
                 "time": "2h",
                 ...action.tweet,
-                "avatar-image": "../../../images/profile.jpeg",
-                "logo-image": "../../../images/profile.jpeg",
+                "avatar-image": "https://pbs.twimg.com/profile_images/446356636710363136/OYIaJ1KK.png",
+                "logo-image": "https://pbs.twimg.com/profile_images/446356636710363136/OYIaJ1KK.png",
                 "stats": {
                     "comments": 123,
                     "retweets": 234,

@@ -1,4 +1,4 @@
-const TWEET_API = 'https://web-dev-node-chintz.herokuapp.com/api/tweets';
+const TWEET_API = 'https://web-dev-node21.herokuapp.com/api/tweets';
 
 export const fetchAllTweets = (dispatch) =>
     fetch(TWEET_API)
@@ -29,7 +29,7 @@ export const postNewTweet = (dispatch, newTweet) =>
 export const deleteTweet = (dispatch, tweet) =>
     fetch(`${TWEET_API}/${tweet._id}`, {
         method: 'DELETE'
-    }).then(response => dispatch({
+    }).then(resposne => dispatch({
         type: 'delete-tweet',
         tweet
     }));
@@ -38,7 +38,7 @@ export const likeTweet = (dispatch, tweet) =>
     fetch(`${TWEET_API}/${tweet._id}/like`, {
         method: 'PUT'
     })
-        .then(response =>
+        .then(respose =>
             dispatch({
                 type: 'like-tweet',
                 tweet
