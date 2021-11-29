@@ -1,15 +1,15 @@
+/* eslint-disable react/style-prop-object */
+/* eslint-disable jsx-a11y/anchor-is-valid */
+/* eslint-disable jsx-a11y/alt-text */
 import React from "react";
 import {useDispatch} from "react-redux";
 import {likeTweet} from "../../../../services/twitterService";
-
 const TweetStats = ({tweet}) => {
     const dispatch = useDispatch();
     const likeClickHandler = () => {
         likeTweet(dispatch, tweet);
     };
-    return (
-    
-    <div className="row mt-2">
+    return (<div className="row mt-2">
         <div className="col">
             <i className="far fa-comment me-2"></i>
             {tweet.stats.comments}

@@ -1,12 +1,15 @@
-/* eslint-disable jsx-a11y/alt-text */
+/* eslint-disable react/style-prop-object */
 /* eslint-disable jsx-a11y/anchor-is-valid */
+/* eslint-disable jsx-a11y/alt-text */
 import React, {useState} from "react";
 import {useDispatch} from "react-redux";
-import {postNewTweet} from "../../../../services/twitterService"
+import {postNewTweet}
+    from "../../../../services/twitterService";
+
+
 const WhatsHappening = () => {
     let [whatsHappening, setWhatsHappening] = useState('');
     const dispatch = useDispatch();
-    
     const tweetClickHandler = () => {
         postNewTweet(dispatch, {
             tweet: whatsHappening
@@ -18,7 +21,7 @@ const WhatsHappening = () => {
             <table style={{marginBottom: '16px'}}>
                 <tr>
                     <td style={{verticalAlign: 'top'}}>
-                        <img src={"https://pbs.twimg.com/profile_images/1442634650703237120/mXIcYtIs_400x400.jpg"}
+                        <img src={'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGBv3q1iB7_9sDod2bCjZLBRtWMPHNLkji_Vl8SJEAzHphiJf3haTYTFjQyJjkx_ns_ag&usqp=CAU'}
                              className="rounded-circle"
                              style={{width: '48px', margin: '16px'}}/>
                     </td>

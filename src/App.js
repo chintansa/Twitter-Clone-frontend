@@ -7,7 +7,6 @@ import {BrowserRouter, Link, Route} from "react-router-dom";
 import A7 from './components/a7';
 import A6 from './components/a6';
 import A8 from './components/a8';
-// import A9 from './components/a9';
 
 
 function App() {
