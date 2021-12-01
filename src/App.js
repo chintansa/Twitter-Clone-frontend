@@ -7,6 +7,7 @@ import {BrowserRouter, Link, Route} from "react-router-dom";
 import A7 from './components/a7';
 import A6 from './components/a6';
 import A8 from './components/a8';
+import A9 from './components/a9';
 
 
 function App() {
@@ -14,13 +15,13 @@ function App() {
     <BrowserRouter>
     <div className="container">
 
-    {/* <Link to = "/a9/practice">
+    <Link to = "/a9/practice">
      Link to A9 
     </Link>
     <Route path={"/a9"}>
         <A9/>
     </Route>
-    <br/> */}
+    <br/>
      
 
     <Link to = "/a8/practice">
